@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="icon" href="./images/bookmark.png">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Courgette|Open+Sans&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="crud.css">
+    <title >BookMark</title>
+</head>
+<body>
+    <section>
+     
+      </div>
+         <div class="leaf">
+         <div>  <img src="http://www.pngmart.com/files/1/Fall-Autumn-Leaves-Transparent-PNG.png" height="75px" width="75px"></img></div>
+          <div><img src="http://www.pngmart.com/files/1/Autumn-Fall-Leaves-Pictures-Collage-PNG.png" height="75px" width="75px"></img></div>
+          <div>  <img src="http://www.pngmart.com/files/1/Autumn-Fall-Leaves-Clip-Art-PNG.png" height="75px" width="75px" ></img></div>
+          <div><img  src="http://www.pngmart.com/files/1/Green-Leaves-PNG-File.png" height="75px" width="75px"></img></div>
+           <div> <img src="http://www.pngmart.com/files/1/Transparent-Autumn-Leaves-Falling-PNG.png" height="75px" width="75px"></img></div>
+    
+                
+         </div>
+         
+         <div class="leaf leaf1">
+         <div>  <img src="http://www.pngmart.com/files/1/Fall-Autumn-Leaves-Transparent-PNG.png" height="75px" width="75px"></img></div>
+          <div><img src="http://www.pngmart.com/files/1/Autumn-Fall-Leaves-Pictures-Collage-PNG.png" height="75px" width="75px"></img></div>
+          <div>  <img src="http://www.pngmart.com/files/1/Autumn-Fall-Leaves-Clip-Art-PNG.png" height="75px" width="75px" ></img></div>
+          <div><img  src="http://www.pngmart.com/files/1/Green-Leaves-PNG-File.png" height="75px" width="75px"></img></div>
+           <div> <img src="http://www.pngmart.com/files/1/Transparent-Autumn-Leaves-Falling-PNG.png" height="75px" width="75px"></img></div>
+           <div> <img src="http://www.pngmart.com/files/1/Transparent-Autumn-Leaves-Falling-PNG.png" height="75px" width="75px"></img></div>
+   
+                
+         </div>
+         
+         <div class="leaf leaf2">
+         <div>  <img src="http://www.pngmart.com/files/1/Fall-Autumn-Leaves-Transparent-PNG.png" height="75px" width="75px"></img></div>
+          <div><img src="http://www.pngmart.com/files/1/Autumn-Fall-Leaves-Pictures-Collage-PNG.png" height="75px" width="75px"></img></div>
+          <div>  <img src="http://www.pngmart.com/files/1/Autumn-Fall-Leaves-Clip-Art-PNG.png" height="75px" width="75px" ></img></div>
+          <div><img  src="http://www.pngmart.com/files/1/Green-Leaves-PNG-File.png" height="75px" width="75px"></img></div>
+    
+           <div> <img src="http://www.pngmart.com/files/1/Transparent-Autumn-Leaves-Falling-PNG.png" height="75px" width="75px"></img></div>
+    
+                
+         </div>
+
+         <!-- !!!!!!!!!!!!!!!_________________!!!!!!!!!!!!!!!!!!!!!_____________!!!!!!!!!!!!!!!!!!!_________________!!!!!!!!!!!!!!!!!!!!_______________!!!!!!!!! -->
+         <!-- !!!!!!!!!!!!!!!_________________!!!!!!!!!!!!!!!!!!!!!_____________!!!!!!!!!!!!!!!!!!!_________________!!!!!!!!!!!!!!!!!!!!_______________!!!!!!!!! -->
+         <!-- !!!!!!!!!!!!!!!_________________!!!!!!!!!!!!!!!!!!!!!_____________!!!!!!!!!!!!!!!!!!!_________________!!!!!!!!!!!!!!!!!!!!_______________!!!!!!!!! -->
+
+         <div class="container">
+         <div class="title py-5  ">
+            <h1 class=" text-center pb-4 " >Book Marker</h1>
+         <div class="line"></div>
+         
+            <h3  class=" text-center  pt-4 " ><span><i class="fa-solid fa-bookmark"></i></span> Bookmark your favorite sites <span><i class="fa-solid fa-bookmark"></i></span></h3>
+         </div>
+         <div class="input">
+            <div class="mb-3">
+               <label   for="sitename"  class="form-label text-white"><span><i class="fa-solid fa-book"></i></span> Site Name   </label>
+               <input oninput="validationName()" type="text" class="form-control "  id="sitename" placeholder="Site Mark Name">
+             </div>
+            <div class="mb-3">
+               <label for="siteurl" class="form-label text-white"><span><i class="fa-solid fa-link"></i></span> Site URL             </label>
+               <input  oninput="validationUrl()" type="url" class="form-control" id="siteurl" placeholder="WebSite URL">
+             </div>
+             <p  id="URLsyntax"  class="d-none bg-danger text-white py-2 rounded-3  " >How to write a url like this example    ----->   https://www.facebook.com</p>
+             <button id="creatnewtask" onclick="addbook()" class="btn btn-danger mt-2   " >Submit</button>
+             <div class="line py-2"></div>
+
+         </div>
+         <div id="alertdanger1" class="alert d-none" role="alert">
+            <h6 class="alert-heading">Site Name or Url is not valid !!!! </h6>
+            <hr>
+            <p> <span><i class="fa-solid fa-circle-arrow-right"></i></span> Site name must contain at least 3 characters</p>
+
+            <p class="mb-0"> <span><i class="fa-solid fa-circle-arrow-right"></i></span>  Site URL must be a valid one</p>
+          </div>
+         <div id="alertdanger" class="alert d-none" role="alert">
+            <h4 class="alert-heading  ">Site Name or Url is not valid ! </h4>
+            <p>Site name must contain at least 3 characters</p>
+            <hr>
+            <p class="mb-0">Whenever you need to, be sure to us</p>
+          </div>
+         <table>
+            <thead>
+               <tr >
+                  <th>index</th>
+                  <th>Website Name	</th>
+                  <th>Visit</th>
+                  <th>Delete</th>
+               </tr>
+            </thead>
+            <tbody id="bodydata" >
+             
+            </tbody>
+         </table>
+         </section>
+
+
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/js/bootstrap.bundle.js">
+    <script src="./crud.js"></script>
+</body>
+</html>
